@@ -1,0 +1,135 @@
+* {
+  font-family: Roboto, "sans serif";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  max-width: 15%;
+  width: 15%;
+  min-width: 15%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  flex: 1 0 auto;
+  padding-left: 80px;
+}
+
+.right-side {
+  width: 85%;
+  max-width: 85%;
+}
+
+li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-stuff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-basis: 10%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sidebar-list1 {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.sidebar-list1,
+.sidebar-list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 0px;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.notif-profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-hi,
+.three-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+}
+.big-grey-section {
+  display: flex;
+}
+
+.right-corner {
+  width: 15%;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 250px); /* 3 columns */
+  grid-template-rows: repeat(3, 250px);
+  grid-gap: 30px 30px;
+  padding-left: 80px;
+}
+
+.announcements-grid {
+  display: grid;
+  padding-left: 80px;
+}
+
+.person1,
+.person2,
+.person3,
+.person4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.trending-grid {
+  display: grid;
+  padding-left: 80px;
+}
+h4 {
+  padding-left: 80px;
+}
