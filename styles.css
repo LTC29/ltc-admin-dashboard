@@ -31,6 +31,7 @@ body {
 
 li {
   list-style: none;
+  transition: all 0.15s;
 }
 
 a:link {
@@ -201,10 +202,10 @@ input.search-bar {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.15s;
 }
 
 .three-btn-header:hover {
-  transition: all 0.15s;
   background-color: #1b1f2e;
   transform: scale(1.03);
 }
@@ -259,6 +260,7 @@ p {
 .share-btn {
   all: unset;
   cursor: pointer;
+  transition: all 0.15s;
 }
 
 .mdi {
@@ -269,19 +271,16 @@ p {
   font-size: 48px;
 }
 li:hover {
-  transition: all 0.15s;
   transform: scale(1.03);
 }
 .star-btn:hover,
 .eye-btn:hover,
 .share-btn:hover {
-  transition: all 0.15s;
   transform: scale(1.1);
 }
 
 .mag-glass:hover,
 .bell-notif:hover {
-  transition: all 0.2s;
   transform: scale(1.2);
 }
 
