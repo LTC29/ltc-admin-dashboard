@@ -262,3 +262,8 @@ p {
 .mdi-view-dashboard-outline {
   font-size: 48px;
 }
+
+.sidebar-list1 a:visited,
+.sidebar-list2 a:visited {
+  color: inherit;
+}
