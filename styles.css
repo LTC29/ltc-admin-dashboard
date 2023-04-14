@@ -268,14 +268,16 @@ p {
 .mdi-view-dashboard-outline {
   font-size: 48px;
 }
-li:hover,
+li:hover {
+  transition: all 0.15s;
+  transform: scale(1.03);
+}
 .star-btn:hover,
 .eye-btn:hover,
 .share-btn:hover {
-  transition: all 0.05s;
-  transform: scale(1.03);
+  transition: all 0.15s;
+  transform: scale(1.1);
 }
-
 .sidebar-list1 a:visited,
 .sidebar-list2 a:visited {
   color: inherit;
