@@ -1,5 +1,5 @@
 * {
-  font-family: Roboto, "sans serif";
+  font-family: "PT Sans", sans-serif;
 }
 
 body {
@@ -41,7 +41,7 @@ a:link {
 .logo-stuff {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
   flex-basis: 10%;
   font-size: 30px;
@@ -106,14 +106,19 @@ a:link {
   display: flex;
   background-color: rgb(161, 161, 161);
   justify-content: space-evenly;
+  height: 85vh;
 }
 
 .right-corner {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   width: 20%;
+  justify-content: flex-start;
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 350px);
+  grid-template-columns: repeat(2, 400px);
   grid-template-rows: repeat(3, 220px);
   grid-gap: 30px 30px;
   padding-left: 0px;
@@ -127,6 +132,10 @@ a:link {
   display: flex;
   flex-direction: column;
   align-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 0 10px -5px #333;
+  font-size: 14px;
 }
 
 .person1,
@@ -134,14 +143,21 @@ a:link {
 .person3,
 .person4 {
   display: flex;
-  justify-content: space-evenly;
-  align-items: space-evenly;
+  gap: 20px;
   width: 300px;
+  height: 65px;
 }
 
 .trending-grid {
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: flex-start;
+  box-shadow: 5px 0 10px -5px #333;
+  font-size: 14px;
+  background-color: rgb(230, 230, 230);
+  align-items: space-around;
 }
 h4 {
   padding-left: 0px;
@@ -159,13 +175,20 @@ h4 {
 
 .projects-rounded-border {
   border-radius: 5px;
+  box-shadow: 5px 0 10px -5px #333;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 16px;
 }
 
 input.search-bar {
-  width: 33vw;
-  border: 1px solid #8a8a8a;
+  width: 600px;
+  border: 1px solid #c9c9c9;
   border-radius: 5px;
-  background-color: #cfcfcf;
+  background-color: #e2e1e1;
+  height: 30px;
 }
 .three-btn-header {
   background-color: black;
@@ -188,8 +211,53 @@ input.search-bar {
 
 .rounded-img {
   border-radius: 100%;
+  width: 50px;
+  height: 50px;
 }
 
 b {
   font-size: large;
+  font-weight: bolder;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 12px;
+}
+
+p {
+  color: rgb(49, 49, 49, 0.7);
+  font-weight: 600;
+}
+
+.grey-hashtag-desc {
+  margin: 4px;
+}
+.project-section {
+  width: 45vw;
+}
+.faint-line,
+.faint-line-trending {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(206, 206, 206);
+}
+
+.bell-notif,
+.mag-glass,
+.star-btn,
+.eye-btn,
+.share-btn {
+  all: unset;
+  cursor: pointer;
+}
+
+.mdi {
+  font-size: 26px;
+}
+
+.mdi-view-dashboard-outline {
+  font-size: 48px;
 }

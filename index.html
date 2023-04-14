@@ -9,28 +9,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css"
     />
     <title>Admin Dashboard</title>
   </head>
   <body>
     <div class="sidebar">
       <div class="logo-stuff">
-        <img src="https://placehold.co/50x50" alt="Logo" />Dashboard
+        <span
+          class="mdi mdi-view-dashboard-outline"
+          style="margin-right: 5px"
+        ></span
+        >Dashboard
       </div>
       <ul class="sidebar-list1">
-        <li><a href="google.com">Home</a></li>
-        <li><a href="google.com">Profile</a></li>
-        <li><a href="google.com">Messages</a></li>
-        <li><a href="google.com">History</a></li>
-        <li><a href="google.com">Tasks</a></li>
-        <li><a href="google.com">Communities</a></li>
+        <li>
+          <a href="google.com">
+            <span class="mdi mdi-home-outline" style="margin-right: 8px"></span>
+            Home</a
+          >
+        </li>
+        <li>
+          <a href="google.com">
+            <span
+              class="mdi mdi-account-box-outline"
+              style="margin-right: 8px"
+            ></span>
+            Profile</a
+          >
+        </li>
+        <li>
+          <a href="google.com"
+            ><span
+              class="mdi mdi-message-outline"
+              style="margin-right: 8px"
+            ></span>
+            Messages</a
+          >
+        </li>
+        <li>
+          <a href="google.com">
+            <span class="mdi mdi-history" style="margin-right: 8px"></span>
+            History</a
+          >
+        </li>
+        <li>
+          <a href="google.com"
+            ><span
+              class="mdi mdi-note-multiple-outline"
+              style="margin-right: 8px"
+            ></span>
+            Tasks</a
+          >
+        </li>
+        <li>
+          <a href="google.com">
+            <span
+              class="mdi mdi-account-group-outline"
+              style="margin-right: 8px"
+            ></span>
+            Communities</a
+          >
+        </li>
       </ul>
       <ul class="sidebar-list2">
-        <li><a href="google.com">Settings</a></li>
-        <li><a href="google.com">Support</a></li>
-        <li><a href="google.com">Privacy</a></li>
+        <li>
+          <a href="google.com"
+            ><span class="mdi mdi-cog-outline" style="margin-right: 8px"></span>
+            Settings</a
+          >
+        </li>
+        <li>
+          <a href="google.com">
+            <span
+              class="mdi mdi-help-circle-outline"
+              style="margin-right: 8px"
+            ></span>
+            Support</a
+          >
+        </li>
+        <li>
+          <a href="google.com">
+            <span
+              class="mdi mdi-shield-check-outline"
+              style="margin-right: 8px"
+            ></span>
+            Privacy</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -39,26 +110,22 @@
         <div class="full-header">
           <div class="header1">
             <div class="search">
-              <button class="mag-glass">S</button>
+              <button class="mag-glass">
+                <span class="mdi mdi-magnify"></span>
+              </button>
               <input type="text" placeholder="Search..." class="search-bar" />
             </div>
             <div class="notif-profile">
-              <button class="bell-notif">N</button>
-              <img
-                src="https://placehold.co/40x40"
-                alt=""
-                class="rounded-img"
-              />
+              <button class="bell-notif">
+                <span class="mdi mdi-bell-ring-outline"></span>
+              </button>
+              <img src="./images/cat1.png" alt="" class="rounded-img" />
               <b>Morgan Oakley</b>
             </div>
           </div>
           <div class="header2">
             <div class="image-hi">
-              <img
-                src="https://placehold.co/60x60"
-                alt=""
-                class="rounded-img"
-              />
+              <img src="./images/cat1.png" alt="" class="rounded-img" />
               <div class="welcome-text">
                 <b>Hi there, <br />Morgan Oakley (@morgan)</b>
               </div>
@@ -75,74 +142,122 @@
             <h4>Your Projects</h4>
             <div class="projects-grid">
               <div class="square-background-color projects-rounded-border">
-                <b>Cool Project</b>
+                <div class="project-title"><b>Cool Project</b></div>
                 <p>
                   Vestibulum efficitur diam et mauris eleifend, quis molestie
                   turpis tristique. Morbi vulputate imperdiet sem in euismod.
                   Nunc euismod, ipsum rhoncus pretium tincidunt.
                 </p>
-                <button class="star-btn">s</button>
-                <button class="eye-btn">e</button>
-                <button class="share-btn">sh</button>
+                <div class="btn-container">
+                  <button class="star-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="eye-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="share-btn">
+                    <span class="mdi mdi-share-variant-outline"></span>
+                  </button>
+                </div>
               </div>
               <div class="square-background-color projects-rounded-border">
-                <b>Less Cool Project</b>
+                <div class="project-title"><b>Less Cool Project</b></div>
                 <p>
                   Nulla sed tempor elit. Nunc a ante mattis lorem vehicula
                   porta. Curabitur lacinia quis leo sed rhoncus. Suspendisse a
                   lacus ullamcorper, cursus diam quis, elementum ipsum. Nam
                   finibus est nisl.
                 </p>
-                <button class="star-btn">s</button>
-                <button class="eye-btn">e</button>
-                <button class="share-btn">sh</button>
+                <div class="btn-container">
+                  <button class="star-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="eye-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="share-btn">
+                    <span class="mdi mdi-share-variant-outline"></span>
+                  </button>
+                </div>
               </div>
               <div class="square-background-color projects-rounded-border">
-                <b>Impossible App</b>
+                <div class="project-title"><b>Impossible App</b></div>
                 <p>
                   Vestibulum dictum justo non justo tincidunt, in condimentum
                   eros consectetur. Aenean quam ipsum, congue nec ultricies ac,
                   malesuada id purus. Phasellus a mi nisi. Aliquam vel tellus et
                   augue congue.
                 </p>
-                <button class="star-btn">s</button>
-                <button class="eye-btn">e</button>
-                <button class="share-btn">sh</button>
+                <div class="btn-container">
+                  <button class="star-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="eye-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="share-btn">
+                    <span class="mdi mdi-share-variant-outline"></span>
+                  </button>
+                </div>
               </div>
               <div class="square-background-color projects-rounded-border">
-                <b>Easy Peasy App</b>
+                <div class="project-title"><b>Easy Peasy App</b></div>
                 <p>
                   Proin porta est quis nisl sollicitudin rutrum. Donec lobortis
                   auctor nisl et consectetur. Nam eget massa eget massa congue
                   posuere sit amet vitae nulla. Curabitur pharetra viverra eros.
                   Donec tempor.
                 </p>
-                <button class="star-btn">s</button>
-                <button class="eye-btn">e</button>
-                <button class="share-btn">sh</button>
+                <div class="btn-container">
+                  <button class="star-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="eye-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="share-btn">
+                    <span class="mdi mdi-share-variant-outline"></span>
+                  </button>
+                </div>
               </div>
               <div class="square-background-color projects-rounded-border">
-                <b>Ad Blocker</b>
+                <div class="project-title"><b>Ad Blocker</b></div>
                 <p>
                   Morbi sed tempus mi. Suspendisse quis urna id risus aliquet
                   commodo. Donec a felis sodales, vehicula lacus ut, pretium
                   purus. Donec gravida, nisl sit amet placerat pharetra, augue
                   dui congue.
                 </p>
-                <button class="star-btn">s</button>
-                <button class="eye-btn">e</button>
-                <button class="share-btn">sh</button>
+                <div class="btn-container">
+                  <button class="star-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="eye-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="share-btn">
+                    <span class="mdi mdi-share-variant-outline"></span>
+                  </button>
+                </div>
               </div>
               <div class="square-background-color projects-rounded-border">
-                <b>Money Maker</b>
+                <div class="project-title"><b>Money Maker</b></div>
                 <p>
                   Curabitur libero nulla, lacinia lacinia libero sed, commodo
                   sagittis nulla. Curabitur sed tortor sit amet purus
                   ullamcorper vehicula sit amet eget libero.
                 </p>
-                <button class="star-btn">s</button>
-                <button class="eye-btn">e</button>
-                <button class="share-btn">sh</button>
+                <div class="btn-container">
+                  <button class="star-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="eye-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="share-btn">
+                    <span class="mdi mdi-share-variant-outline"></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -157,6 +272,7 @@
                   mi. Sed egestas et justo.
                 </p>
               </div>
+              <div class="faint-line"></div>
               <div class="square-background-color">
                 <b>Community Share Day</b>
                 <p>
@@ -164,6 +280,7 @@
                   ullamcorper enim. Integer imperdiet tincidunt.
                 </p>
               </div>
+              <div class="faint-line"></div>
               <div class="square-background-color">
                 <b>Updated Privacy Policy</b>
                 <p>
@@ -176,35 +293,50 @@
             <div class="trending-grid">
               <div class="person1 square-background-color">
                 <img
-                  src="https://placehold.co/40x40"
+                  src="./images/cat2.png"
                   alt="person1 account logo"
                   class="rounded-img"
                 />
-                <div><b>@tegan</b><br />World Peace Builder</div>
+                <div>
+                  <b>@tegan</b><br />
+                  <p class="grey-hashtag-desc">World Peace Builder</p>
+                </div>
               </div>
+              <div class="faint-line-trending"></div>
               <div class="person2 square-background-color">
                 <img
-                  src="https://placehold.co/40x40"
+                  src="./images/cat1.png"
                   alt="person2 account logo"
                   class="rounded-img"
                 />
-                <div><b>@morgan</b><br />Super Cool Project</div>
+                <div>
+                  <b>@morgan</b><br />
+                  <p class="grey-hashtag-desc">Super Cool Project</p>
+                </div>
               </div>
+              <div class="faint-line-trending"></div>
               <div class="person3 square-background-color">
                 <img
-                  src="https://placehold.co/40x40"
+                  src="./images/cat3.png"
                   alt="person3 account logo"
                   class="rounded-img"
                 />
-                <div><b>@kendall</b><br />Life Changing App</div>
+                <div>
+                  <b>@kendall</b><br />
+                  <p class="grey-hashtag-desc">Life Changing App</p>
+                </div>
               </div>
+              <div class="faint-line-trending"></div>
               <div class="person4 square-background-color">
                 <img
-                  src="https://placehold.co/40x40"
+                  src="./images/cat4.png"
                   alt="person4 account logo"
                   class="rounded-img"
                 />
-                <div><b>@alex</b><br />No Traffic Maker</div>
+                <div>
+                  <b>@alex</b><br />
+                  <p class="grey-hashtag-desc">No Traffic Maker</p>
+                </div>
               </div>
             </div>
           </div>
