@@ -203,6 +203,12 @@ input.search-bar {
   cursor: pointer;
 }
 
+.three-btn-header:hover {
+  transition: all 0.15s;
+  background-color: #1b1f2e;
+  transform: scale(1.03);
+}
+
 .full-header {
   height: 15vh;
   display: flex;
@@ -261,6 +267,13 @@ p {
 
 .mdi-view-dashboard-outline {
   font-size: 48px;
+}
+li:hover,
+.star-btn:hover,
+.eye-btn:hover,
+.share-btn:hover {
+  transition: all 0.05s;
+  transform: scale(1.03);
 }
 
 .sidebar-list1 a:visited,
