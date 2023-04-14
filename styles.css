@@ -13,9 +13,9 @@ body {
   flex-direction: column;
   background-color: black;
   color: white;
-  max-width: 15%;
-  width: 15%;
-  min-width: 15%;
+  max-width: 20%;
+  width: 20%;
+  min-width: 20%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -24,8 +24,9 @@ body {
 }
 
 .right-side {
-  width: 85%;
-  max-width: 85%;
+  width: 80%;
+  max-width: 80%;
+  background-color: rgb(161, 161, 161);
 }
 
 li {
@@ -67,6 +68,8 @@ a:link {
   display: flex;
   justify-content: space-between;
   padding-left: 80px;
+  background-color: rgb(230, 230, 230);
+  padding-right: 80px;
 }
 
 .search {
@@ -96,25 +99,34 @@ a:link {
   justify-content: space-between;
   align-items: center;
   padding-left: 80px;
+  background-color: rgb(230, 230, 230);
+  padding-right: 80px;
 }
 .big-grey-section {
   display: flex;
+  background-color: rgb(161, 161, 161);
+  justify-content: space-evenly;
 }
 
 .right-corner {
-  width: 15%;
+  width: 20%;
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 250px); /* 3 columns */
-  grid-template-rows: repeat(3, 250px);
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(3, 220px);
   grid-gap: 30px 30px;
-  padding-left: 80px;
+  padding-left: 0px;
+  background-color: rgb(161, 161, 161);
+  align-content: center;
+  height: auto;
+  width: auto;
 }
 
 .announcements-grid {
-  display: grid;
-  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .person1,
@@ -124,12 +136,60 @@ a:link {
   display: flex;
   justify-content: space-evenly;
   align-items: space-evenly;
+  width: 300px;
 }
 
 .trending-grid {
-  display: grid;
-  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
 }
 h4 {
-  padding-left: 80px;
+  padding-left: 0px;
+  font-size: larger;
+}
+
+.full-header {
+  background-color: rgb(230, 230, 230);
+}
+
+.square-background-color {
+  background-color: rgb(230, 230, 230);
+  padding: 10px;
+}
+
+.projects-rounded-border {
+  border-radius: 5px;
+}
+
+input.search-bar {
+  width: 33vw;
+  border: 1px solid #8a8a8a;
+  border-radius: 5px;
+  background-color: #cfcfcf;
+}
+.three-btn-header {
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  width: 120px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-header {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rounded-img {
+  border-radius: 100%;
+}
+
+b {
+  font-size: large;
 }
