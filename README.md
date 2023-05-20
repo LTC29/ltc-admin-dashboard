@@ -1,5 +1,2 @@
-# ltc-admin-dashboard
+## LTC's Admin Dashboard
 
-"Project: Admin Dashboard" for The Odin Project
-
-TO BE UPDATED
